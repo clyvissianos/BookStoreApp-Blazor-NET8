@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using BookStoreApp.API.Data;
+using BookStoreApp.Blazor.Server.UI.Services.Base.API.Data;
 using AutoMapper;
-using BookStoreApp.API.Models.Book;
+using BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.Book;
 using AutoMapper.QueryableExtensions;
 using NuGet.Versioning;
 using NuGet.Packaging.Signing;
 using Microsoft.AspNetCore.Authorization;
 
-namespace BookStoreApp.API.Controllers
+namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

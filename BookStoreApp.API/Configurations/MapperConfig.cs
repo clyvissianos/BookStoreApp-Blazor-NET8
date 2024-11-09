@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using BookStoreApp.API.Data;
-using BookStoreApp.API.Models.Author;
-using BookStoreApp.API.Models.Book;
-using BookStoreApp.API.Models.User;
+using BookStoreApp.Blazor.Server.UI.Services.Base.API.Data;
+using BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.Author;
+using BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.Book;
+using BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.User;
 
-namespace BookStoreApp.API.Configurations
+namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Configurations
 {
     public class MapperConfig : Profile
     {

@@ -1,5 +1,5 @@
-using BookStoreApp.API.Configurations;
-using BookStoreApp.API.Data;
+using BookStoreApp.Blazor.Server.UI.Services.Base.API.Configurations;
+using BookStoreApp.Blazor.Server.UI.Services.Base.API.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

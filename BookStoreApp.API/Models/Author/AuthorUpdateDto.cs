@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BookStoreApp.API.Models.Author
+namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.Author
 {
     public class AuthorUpdateDto : BaseDto
     {

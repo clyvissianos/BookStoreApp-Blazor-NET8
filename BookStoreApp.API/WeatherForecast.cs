@@ -1,4 +1,4 @@
-namespace BookStoreApp.API
+namespace BookStoreApp.Blazor.Server.UI.Services.Base.API
 {
     public class WeatherForecast
     {

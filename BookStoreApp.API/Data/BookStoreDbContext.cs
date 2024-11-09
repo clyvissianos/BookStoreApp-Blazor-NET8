@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookStoreApp.API.Data;
+namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Data;
 
 public partial class BookStoreDbContext : IdentityDbContext<ApiUser>
 {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookStoreApp.API.Controllers
+namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

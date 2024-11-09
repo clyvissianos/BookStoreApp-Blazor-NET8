@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BookStoreApp.API.Data;
+namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Data;
 
 public partial class Book
 {

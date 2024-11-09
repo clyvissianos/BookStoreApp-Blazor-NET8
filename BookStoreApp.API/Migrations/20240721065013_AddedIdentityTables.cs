@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace BookStoreApp.API.Migrations
+namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Migrations
 {
     /// <inheritdoc />
     public partial class AddedIdentityTables : Migration
