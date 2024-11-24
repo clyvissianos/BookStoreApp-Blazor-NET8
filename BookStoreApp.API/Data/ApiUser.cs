@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Data
+namespace BookStoreApp.API.Data
 {
     public class ApiUser : IdentityUser
     {

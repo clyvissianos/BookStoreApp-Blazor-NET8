@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using BookStoreApp.Blazor.Server.UI.Services.Base.API.Data;
-using BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.Author;
+using BookStoreApp.API.Data;
+using BookStoreApp.API.Models.Author;
 using AutoMapper;
-using BookStoreApp.Blazor.Server.UI.Services.Base.API.Static;
+using BookStoreApp.API.Static;
 using Microsoft.AspNetCore.Authorization;
+using AutoMapper.QueryableExtensions;
 
 namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Controllers
 {
@@ -49,11 +50,14 @@ namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Controllers
 
         // GET: api/Authors/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<AuthorReadOnlyDto>> GetAuthor(int id)
+        public async Task<ActionResult<AuthorDetailsDto>> GetAuthor(int id)
         {
             try
             {
-                var author = await _context.Authors.FindAsync(id);
+                var author = await _context.Authors
+                    .Include(q => q.Books)
+                    .ProjectTo<AuthorDetailsDto>(_mapper.ConfigurationProvider)
+                    .FirstOrDefaultAsync(q => q.Id == id);
 
                 if (author == null)
                 {
@@ -61,8 +65,7 @@ namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Controllers
                     return NotFound();
                 }
 
-                var authorDto = _mapper.Map<AuthorReadOnlyDto>(author);
-                return Ok(authorDto);
+                return Ok(author);
             }
             catch (Exception ex)
             {

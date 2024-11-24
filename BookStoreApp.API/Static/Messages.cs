@@ -1,4 +1,4 @@
-﻿namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Static
+﻿namespace BookStoreApp.API.Static
 {
     public static class Messages
     {

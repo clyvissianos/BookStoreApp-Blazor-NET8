@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using BookStoreApp.Blazor.Server.UI.Services.Base.API.Data;
-using BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.User;
-using BookStoreApp.Blazor.Server.UI.Services.Base.API.Static;
+using BookStoreApp.API.Data;
+using BookStoreApp.API.Models.User;
+using BookStoreApp.API.Static;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -11,7 +11,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Controllers
+namespace BookStoreApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

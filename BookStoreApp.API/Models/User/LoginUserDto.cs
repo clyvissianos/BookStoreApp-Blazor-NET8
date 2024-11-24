@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.User
+namespace BookStoreApp.API.Models.User
 {
     public class LoginUserDto
     {

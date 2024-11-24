@@ -1,4 +1,4 @@
-﻿namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Models
+﻿namespace BookStoreApp.API.Models
 {
     public abstract class BaseDto
     {

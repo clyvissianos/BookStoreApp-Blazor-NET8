@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.Book
+namespace BookStoreApp.API.Models.Book
 {
     public class BookCreateDto
     {

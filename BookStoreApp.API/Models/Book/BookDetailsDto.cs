@@ -1,4 +1,6 @@
-﻿namespace BookStoreApp.Blazor.Server.UI.Services.Base.API.Models.Book
+﻿using BookStoreApp.API.Models;
+
+namespace BookStoreApp.API.Models.Book
 {
     public class BookDetailsDto : BaseDto
     {
